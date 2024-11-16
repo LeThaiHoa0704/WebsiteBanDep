@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .logo img {
+    width: 120px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+#menu .menu-item {
+    display: inline;
+}
+
+#menu .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+#menu .nav-link:hover,
+#menu .nav-link.active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Banner */
+#banner {
+    background-image: url('../img/background.jpg'); /* Đổi URL theo ảnh của bạn */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner-content h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.banner-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-content button:hover {
+    background-color: #555;
+}
+
+/* Sản phẩm */
+#wp-products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#wp-products h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#list-products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+.product-desc {
+    color: #666;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #e60000;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+/* Phân trang */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.page-item {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.page-item:hover {
+    background-color: #555;
+}
+
+/* Sale */
+#saleoff {
+    background-color: #ffcccc;
+    color: #e60000;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#saleoff h1 span {
+    display: block;
+}
+
+/* Phản hồi từ khách hàng */
+#reviews {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#reviews h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.review-item {
+    margin: 15px auto;
+    max-width: 600px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Liên hệ */
+#contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Modal giỏ hàng */
+#cartModal .modal-content {
+    border-radius: 10px;
+}
+
+#cartModal .modal-title {
+    font-size: 24px;
+}
+
+#cartModal .modal-body p {
+    font-size: 18px;
+}
+
+#cartModal .btn-primary {
+    background-color: #333;
+    border: none;
+}
+
+#cartModal .btn-primary:hover {
+    background-color: #555;
+}
+
+/* Định dạng cho nút giỏ hàng trong menu */
+#cart-count {
+    font-size: 14px;
+    margin-left: 5px;
+    padding: 2px 5px;
+}

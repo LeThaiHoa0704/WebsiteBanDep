@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #ff9900;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact-form {
+    background-color: #f8f9fa;
+}
+
+.contact-form .form-label {
+    color: #333;
+}
+
+.contact-form .btn-primary {
+    background-color: #ff9900;
+    border: none;
+    font-weight: bold;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    font-size: 0.9rem;
+}
